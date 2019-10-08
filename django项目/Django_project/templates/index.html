@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+
+{% block page-main %}
+   <!--文章开始-->
+        <div class="article_list">
+            {% for article in article_list %}
+                <div class="article">
+                    <p class="title-size"><a href="/blog/{{ article.user.username }}/article/{{ article.pk }}/">{{ article.title }}</a></p>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object usr_img" src="/media/{{ article.user.avatar }}" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <p>{{ article.desc }}</p>
+                        </div>
+                    </div>
+                    <div class="article-footer">
+                        <span><a href="/blog/{{ article.user.username }}/">{{ article.user.username }}</a></span>发布于
+                        <span>{{ article.create_time|date:'Y-m-d H:i:s' }}</span>
+                        <span class="glyphicon glyphicon-comment"><a href="#">评论({{ article.comment_count }})</a></span>
+                        <span class="glyphicon glyphicon-thumbs-up" id="up_down">点赞({{ article.up_count }})</span>
+                    </div>
+                <hr>
+                </div>
+            {% endfor %}
+        {% block scripts %}
+            <script src="/static/jquery-3.3.1/jquery-3.3.1.js"></script>
+            <script src="/static/bootstrap3/js/bootstrap.min.js"></script>
+            <script>
+            $("#up_down").click(function () {
+                var is_up = $(this)
+
+            })
+            </script>
+         {% endblock %}
+        </div>
+        <!--文章结束-->
+{% endblock %}
+

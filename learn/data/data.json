@@ -1,0 +1,229 @@
+{
+  "url":{
+    "101":"http://sit-api.hexinxiaodai.com:10086",
+    "161":"http://api-sandbox.hxgp.com"
+  },
+
+  "path":{
+    "register": "/v1/register",
+    "ocr":"/v1/validation/idcard/ocr",
+    "confirmation":"/v1/validation/idcard/confirmation",
+    "authcode": "/v1/authcode/register",
+    "staff": "/v1/userinfo/staff",
+    "login": "/v1/login",
+    "userBase":"/v1/me/dealUserBase",
+    "getUserBase":"/v1/me/getUserBase",
+    "occupation":"/v1/me/dealUserBaseForOccupation",
+    "getOccupationInfo":"/v1/me/getUserBaseForOccupation",
+    "userRelation":"/v1/me/dealUserRelation",
+    "getUserRelation":"/v1/me/getUserRelation",
+    "onLineAuthMobileUrl":"/v1/online/getAuthorizationUrl",
+    "creditAuthMobileUrl":"/v1/audit/getAuthorizationUrl",
+    "houseLoanAuthMobileUrl":"/v1/houseloan/getAuthorizationUrl"
+  },
+    "houseLoanPath":{
+      "CustomerForHouseLoan":"/v1/houseloan/saveCustomerForHouseLoan",
+      "getCustomerInfo":"/v1/houseloan/queryCustomerInfo",
+      "customerWorkInfo":"/v1/houseloan/saveCustomerWorkInfoForHouseLoan",
+      "getCustomerWorkInfo":"/v1/houseloan/getCustomerWorkInfo",
+      "houseBaseInfo":"/v1/houseloan/saveHouseBaseInfoForHouseLoan",
+      "getBaseHouseInfo":"/v1/houseloan/getBaseHouseInfo",
+      "propertyHolderInfo":"/v1/houseloan/savePropertyHolderInfoForHouseLoan",
+      "getPropertyHolderInfo":"/v1/houseloan/getPropertyHolderInfo",
+      "customerManageMentInfo":"/v1/houseloan/saveCustomerManageMentInfo",
+      "getCustomerManageMentInfo":"/v1/houseloan/queryManageMentInfo",
+      "houseLoanAuthMobileUrl":"/v1/houseloan/getAuthorizationUrl"
+  },
+
+  "database":{
+    "161":{"host": "172.16.10.138", "user": "credit_rw", "password": "credit", "port": "3307", "db": "101credit_app"},
+    "101":{"host": "172.16.10.138", "user": "credit_rw", "password": "credit", "port": "3307","db":"101credit_app"},
+    "103":{"host": "172.16.10.138", "user": "credit_rw", "password": "credit", "port": "3307", "db": "161risk_control_bus"}
+
+  },
+
+  "db":{
+  	"host": "172.16.10.138",
+  	"user": "credit_rw",
+  	"password": "credit",
+  	"port": "3307",
+  	"db": "101credit_app"
+  },
+
+ "loginUrl":"http://api-sandbox.hxgp.com/v1/login",
+  
+  "loginData":{
+    "phone":"13540700000",
+    "password":"123123123",
+    "registration_id":"190e35f7e039280001a"
+  },
+
+  "authcodeRegister":{
+    "phone":"13509807749"
+  },
+
+  "register":{
+    "phone":"13509807749",
+    "password":"123123123",
+    "captcha":"888888",
+    "registration_id":"190e35f7e039280001a",
+    "login_terminal":1
+  },
+
+  "userBaseData":{
+    "email":"2480608500@qq.com",
+    "highestEducation":"1",
+    "isMarry":"1",
+    "hasChildren":"1",
+    "liveStatus":"1",
+    "householdCity":"市辖区",
+    "householdProvince":"北京市",
+    "householdSubcity":"海淀区",
+    "livesAddress":"金融街38号院",
+    "livesCity":"市辖区",
+    "livesProvince":"北京市",
+    "livesSubCity":"东城区",
+    "livesTelphone":"13378454141",
+    "mobilePhone": "13850214546",
+    "remarks":"借款服务"
+    },
+	
+	"occupationData":{
+      "companyAddress":"圆明园西路",
+      "companyCity":"市辖区",
+      "companyProvince":"北京市",
+      "companySubcity":"海淀区",
+      "companyTelphone":"13987542101",
+      "companyWorkName":"和信电子商务有限公司",
+      "department":"研发部",
+      "hireDate":"2012-3-19",
+      "incomeMonth":"40000",
+      "involved":"金融业",
+      "occupationType":"2",
+      "unitNature":"2",
+      "workPosition":"公务员-厅局级以上"
+    },
+  
+  "headersData":{
+    "channel": "master",
+    "Connection": "keep-alive",
+    "Accept": "application/json",
+    "Accept-Language": "zh-cn",
+    "Accept-Encoding": "gzip, deflate",
+    "Content-Type": "application/x-www-form-urlencoded",
+	"Host": "api-sandbox.hxgp.com"
+  },
+
+
+  "data":{
+    "userBaseData":
+    {"email":"2480608500@qq.com",
+      "highestEducation":"1",
+      "isMarry":"1",
+      "hasChildren":"1",
+      "liveStatus":"1",
+      "householdCity":"市辖区",
+      "householdProvince":"北京市",
+      "householdSubcity":"海淀区",
+      "livesAddress":"金融街38号院",
+      "livesCity":"市辖区",
+      "livesProvince":"北京市",
+      "livesSubCity":"东城区",
+      "livesTelphone":"13378454141",
+      "mobilePhone": "13850214546",
+      "remarks":"借款服务"
+    },
+
+    "occupationData":{
+      "companyAddress":"圆明园西路",
+      "companyCity":"市辖区",
+      "companyProvince":"北京市",
+      "companySubcity":"海淀区",
+      "companyTelphone":"13987542101",
+      "companyWorkName":"和信电子商务有限公司",
+      "department":"研发部",
+      "hireDate":"2012-3-19",
+      "incomeMonth":"40000",
+      "involved":"金融业",
+      "occupationType":"2",
+      "unitNature":"2",
+      "workPosition":"公务员-厅局级以上"
+    },
+    "userRelationData":{
+      "a":{"linkType":"1","menName":"王子易","menPhone":"13021018095","relationship":"配偶"},
+      "b":{"linkType":"1","menName":"王海","menPhone":"13021018891","relationship":"父母"},
+      "c":{"linkType":"3","menName":"刘东小","menPhone":"13021018295","relationship":"同事"},
+      "d":{"linkType":"3","menName":"王大陆","menPhone":"13365442121","relationship":"朋友"},
+      "emergencyContactKnow":"0",
+      "familyKnow":"0"
+    },
+    "houseloan_couserInfo":{
+      "city":"北京",
+      "county":"朝阳区",
+      "email":"550775725@qq.com",
+      "isHaveChild":"无",
+      "marriage":"未婚",
+      "place":"北京市朝阳区望京北路东南口广渠门外大街33号个IE哦啊个囧恩爱狗该金额偶爱光棍节爱格奥逛街奥吉格额奥吉格诶啊哦逛街熬过饿哦挨个哦啊哥啊",
+      "province":"北京"
+    },
+    "customerWorkInfo":{
+      "workCompanyCity":"北京市",
+      "workCompanyCounty":"海淀区",
+      "workCompanyName":"和信电子商务有限公司",
+      "workCompanyNature":"国有股份",
+      "workCompanyPlace":"北京市朝阳区望京北路东南口广渠门外大街33号个IE哦啊个囧恩爱狗哈哈哈哈哈哈哈哈哈哈哈哈哈个hi额hi安静哦给猴搞合规好好过黑暗红黑哦阿尔噶",
+      "workCompanyProvince":"北京",
+      "workDuty":"初级管理人员",
+      "workPhone":"13765545656",
+      "workTrade":"电力、热力、燃气及水生产和供应业"
+    },
+    "houseloanBaseInfo":{
+      "acreage":"200",
+      "completionTime":"2013-04-18",
+      "county":"丰台区",
+      "countyCode":"18",
+      "deedNumber":"京房权证丰台字第2019855552451458号",
+      "houseType":"住宅",
+      "housingEstateName":"宏福苑小区",
+      "landSource":"其他",
+      "place":"北京市朝阳区望京北路东南口广渠门外大街33号个IE哦啊个囧恩爱呵呵呵呵呵呵哈个hi额hi安静哦给猴搞合规好好过黑暗红黑哦阿尔噶",
+      "registerTime":"2016-04-18",
+      "storey":"20",
+      "totalStorey":"30",
+      "userSituation":"自用"
+    },
+    "propertyHodlerInfo":{
+      "houseInfoId":"351",
+      "id":"44",
+      "idCard":"410883198506152018",
+      "marriage":"已婚",
+      "name":"王贵杰",
+      "relation":"配偶",
+      "relevanceIdNumber":"340204198203122317",
+      "relevanceName":"曹文宇"
+    },
+    "cutomerMangeMentInfo":{
+      "borrowerIdentity":"法人",
+      "businessLicenseAdress":"北京市丰台区方庄路丰台总部基地科技园38号院4号楼55号33层嘎嘎嘎哈哈哈哈哈哈哈",
+      "businessLicenseCity":"北京市",
+      "businessLicenseCorporateName":"和信电子商务有限公司",
+      "businessLicenseCounty":"丰台区",
+      "businessLicenseEffective":"1",
+      "businessLicenseExpireTime":"",
+      "businessLicenseProvince":"北京",
+      "businessLicenseRegisterTime":"2013-4-19",
+      "businessLicenseType":"个体工商户",
+      "publicAccount":"6212260200013418591",
+      "purchaseSaleContractBalance":"150000",
+      "shareProportion":"100",
+      "unifiedCreditCode":"7383748488485959"
+    },
+    "linkMen":{
+      "a":{"contactRelationShip":"朋友","menName":"王东","menPhone":"15001245741"},
+      "b":{"contactRelationShip":"朋友","menName":"孙俪","menPhone":"13585854847"},
+      "c":{"contactRelationShip":"亲属","menName":"周杰伦","menPhone":"13698987878"},
+      "d":{"contactRelationShip":"同事","menName":"王致和","menPhone":"13069512541"}
+    }
+  }
+
+}

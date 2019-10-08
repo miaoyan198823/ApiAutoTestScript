@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>学生列表</title>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>学生列表</title>
+</head>
+<body>
+<div class="container">
+  <a class="btn btn_primary" href="/add_student/" style="margin-top: 30px">添加学生</a>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>邮箱</th>
+        <th>所属班级</th>
+        <th>地址</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for s in student_list %}
+      <tr>
+        <td>{{ s.nid }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.age }}</td>
+        <td>{{ s.email }}</td>
+        <td>{{ s.cls }}</td>
+        <td>{{ s.address }}</td>
+        <td>
+            <button  type="button" class="btn btn-outline-success"><a href="/edit_student/{{ s.nid }}">编辑</a></button>
+            <button  type="button" class="btn btn-outline-success del_btn"><a href="/del_student/{{ s.nid }}">删除</a></button>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<script src="/static/jquery-3.3.1/jquery-3.3.1.js"></script>
+<script src="/static/bootstrap3/js/bootstrap.min.js"></script>
+<script>
+    $(".del_btn").click(function () {
+        var $trEle = $(this).parent().parent();
+        var nid = $trEle.children().eq(0).text();
+        $.ajax({
+            url:"/del_student/{{ nid }}",
+            type:"get",
+            data:{"nid":nid},
+            success:function (data) {
+                $trEle.remove();
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

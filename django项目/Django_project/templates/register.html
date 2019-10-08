@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+    {% load staticfiles %}
+{#    <link rel="SHORTCUT ICON" HREF="{% static "favicon.ico" %}">#}
+{#    <link rel="stylesheet" href="/static/mystyle.css">#}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>用户注册</title>
+</head>
+<body>
+<div class="container" style="margin-top: 200px">
+    <div class="col-md-5 m-auto ">
+        <h2><p class="text-center">用户注册</p></h2>
+        <form class="form-horizontal reg-form" method="post" action="" enctype="multipart/form-data" novalidate autocomplete="off">
+            {% csrf_token %}
+            <div class="form-group ">
+                <label for="{{regForm.username.id_for_label }}">{{ regForm.username.label }}</label>
+                {{ regForm.username }}
+                <span class="help-block">{{ regForm.username.errors.0 }}</span>
+            </div>
+            <div class="form-group ">
+                <label for="{{ regForm.password.id_for_label }}">{{ regForm.password.label }}</label>
+                {{ regForm.password }}
+                <span class="help-block">{{ regForm.password.errors.0 }}</span>
+            </div>
+            <div class="form-group ">
+                <label for="{{ regForm.ret_password.id_for_label }}">{{ regForm.ret_password.label }}</label>
+                {{ regForm.ret_password }}
+                <span class="help-block">{{ regForm.ret_password.errors.0 }}</span>
+            </div>
+            <div class="form-group ">
+                <label class="col-sm-2 contro-label">头像:</label>
+                <div class="col-sm-4">
+                    <label for="id_avatar"><img id="avatar-img"
+                            src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554982671519&di=c10b2714e69d6ad8109833560b08ad99&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01d1865543ec5b0000019ae91b12c1.jpg%401280w_1l_2o_100sh.png" width=70px height=70px ></label>
+                    <input type="file" name="avatar" id="id_avatar" style="display: none">
+                </div>
+            </div>
+            <button type="button" class="btn btn-success btn-lg btn-block" id="reg_btn">注册</button>
+        </form>
+    </div>
+</div>
+<script src="/static/jquery-3.3.1/jquery-3.3.1.js"></script>
+<script src="/static/bootstrap3/js/bootstrap.min.js"></script>
+<script>
+    //给默认图片绑定change事件
+    $("#id_avatar").on("change",function () {
+        //读取已选中的图片文件
+        var fileReader = new FileReader();
+        //取到当前选中的头像文件
+        var filePath = this.files[0] ;
+        //读取选中的文件
+        fileReader.readAsDataURL(filePath);//读取文件需要时间
+        //等把文件读完之后，才把文件加载到img标签里面
+        $(document).ready(function () {
+            $("#avatar-img").attr("src",fileReader.result);
+        })
+    });
+
+    //用ajax提交注册数据
+    $("#reg_btn").on("click", function () {
+         //取到用户填写的注册数据，像后端发送ajax请求
+        var formData = new FormData();
+        formData.append("username",$("#id_username").val());
+        formData.append("password",$("#id_password").val());
+        formData.append("ret_password",$("#id_ret_password").val());
+        formData.append("avatar",$("#id_avatar")[0].files[0]);
+        formData.append("csrfmiddlewaretoken",$("[name='csrfmiddlewaretoken']").val());
+        console.log(formData.get("password"));
+        console.log(formData.get("ret_password"));
+        $.ajax({
+            url:"/register/",
+            type:"post",
+            processData: false,
+            contentType: false,
+            cache:false,
+            data:formData,
+            success:function (data) {
+                if (data.success_info) {
+                    //没错误正常跳转页面
+                    window.location.href = "/login/";
+                }else {
+                    //有错误展示错误
+                    console.log(data.error_info);
+                    $.each(data.error_info,function (k,v) {
+                        $("#id_" + k).next().text(v[0]).css({"color": "red",
+                            "font-size": "12px"});
+                    })
+                }
+            }
+        });
+    });
+
+    $("form input").focus(function () {
+        $(this).next().text("");
+
+    });
+
+    $("#id_username").blur(function () {
+        var username = $(this).val();
+        $.ajax({
+            url: "/check_reg_username/",
+            type: "get",
+            data: {"username":username},
+            success:function (data) {
+                if(data.msg_info){
+                    $("#id_username").next().text(data.msg_info).css({
+                        "color": "red",
+                        "font-size": "12px"
+                    })
+                }
+            }
+        })
+    })
+
+</script>
+</body>
+</html>

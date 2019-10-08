@@ -1,0 +1,176 @@
+[2017-11-10 18:12:54,321](INFO)__main__ : DB connect successful!
+[2017-11-27 14:26:04,234](INFO)__main__ : DB connect successful!
+[2017-11-27 14:26:42,802](INFO)__main__ : DB connect successful!
+[2017-11-27 14:32:19,790](INFO)__main__ : DB connect successful!
+[2018-01-13 18:05:50,793](INFO)__main__ : DB connect successful!
+[2018-01-15 15:47:58,736](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 15:50:13,608](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 15:51:34,072](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 15:53:27,088](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 15:53:34,592](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 15:53:35,766](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 15:53:56,045](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 16:13:38,970](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 16:26:24,216](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 17:08:15,983](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 17:09:07,085](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 17:12:27,851](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 17:14:00,657](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 17:14:46,568](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:05:36,269](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:07:00,183](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:07:22,296](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:07:45,835](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:08:18,237](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:08:44,187](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:11:33,585](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:11:43,132](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:11:52,938](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:12:50,773](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:16:01,283](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:16:24,457](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-15 18:17:03,006](ERROR)src.public.configHTTP : get request error:'unicode' object has no attribute 'items'
+[2018-01-15 18:28:54,387](ERROR)src.public.configHTTP : get request error:'str' object has no attribute 'items'
+[2018-01-15 18:29:57,746](ERROR)src.public.configHTTP : get request error:'str' object has no attribute 'items'
+[2018-01-15 18:33:31,727](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 09:26:34,506](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 09:27:07,358](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 09:27:09,552](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 09:27:10,355](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 10:07:19,844](ERROR)src.public.configHTTP : get request error:'str' object has no attribute 'items'
+[2018-01-16 10:18:47,078](ERROR)src.public.configHTTP : get request error:'unicode' object has no attribute 'items'
+[2018-01-16 10:30:13,558](ERROR)src.public.configHTTP : get request error:'unicode' object has no attribute 'items'
+[2018-01-16 11:18:18,002](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:26:11,591](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:26:11,601](ERROR)test_login_api : error info: 'ascii' codec can't decode byte 0xe6 in position 0: ordinal not in range(128)
+[2018-01-16 11:27:02,499](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:27:02,509](ERROR)test_login_api : error info: 'ascii' codec can't decode byte 0xe6 in position 0: ordinal not in range(128)
+[2018-01-16 11:28:27,911](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:30:01,040](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:30:01,049](ERROR)test_login_api : error info: 'ascii' codec can't decode byte 0xe6 in position 0: ordinal not in range(128)
+[2018-01-16 11:30:31,342](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:30:31,354](ERROR)test_login_api : error info: string indices must be integers
+[2018-01-16 11:30:47,196](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:31:07,802](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:31:07,812](ERROR)test_login_api : error info: string indices must be integers
+[2018-01-16 11:31:24,592](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:32:02,148](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:32:02,161](ERROR)test_login_api : error info: string indices must be integers
+[2018-01-16 11:32:19,072](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:32:51,046](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 11:33:11,834](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:08:10,151](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:11:54,655](ERROR)test_yxindex_api : error info: global name 'dataAll' is not defined
+[2018-01-16 17:13:05,246](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:13:08,289](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='127.0.0.1', port=13799): Read timed out.
+[2018-01-16 17:13:47,174](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:13:51,191](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='127.0.0.1', port=13799): Read timed out.
+[2018-01-16 17:14:48,990](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:14:53,045](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='127.0.0.1', port=13799): Read timed out.
+[2018-01-16 17:15:33,947](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:15:38,094](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:16:15,164](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:16:19,176](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='127.0.0.1', port=13799): Read timed out.
+[2018-01-16 17:17:54,236](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:17:58,244](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='127.0.0.1', port=13799): Read timed out.
+[2018-01-16 17:21:58,125](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:21:58,276](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='127.0.0.1', port=13799): Read timed out. (read timeout=0.1)
+[2018-01-16 17:22:26,806](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:22:26,907](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='127.0.0.1', port=13799): Read timed out. (read timeout=0.1)
+[2018-01-16 17:22:43,039](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:25:25,440](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:27:21,660](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:33:13,740](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:34:05,723](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:34:54,549](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:38:43,101](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:39:26,828](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:43:53,855](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:44:55,928](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:52:07,648](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:54:36,305](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:56:32,063](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:57:29,005](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 17:57:29,063](ERROR)src.public.configHTTP : post request error: No JSON object could be decoded
+[2018-01-16 18:13:10,846](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 18:13:10,864](INFO)src.testcase.test_login_api : request successful!
+[2018-01-16 18:14:36,269](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 18:14:36,279](ERROR)src.testcase.test_login_api : error info: not all arguments converted during string formatting
+[2018-01-16 18:15:24,252](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 18:15:24,351](INFO)src.testcase.test_login_api : request successful!
+[2018-01-16 18:15:47,838](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 18:16:09,253](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-16 18:22:22,213](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-17 11:22:50,492](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-17 15:09:47,434](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-17 15:15:41,378](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-17 15:18:14,243](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:06:28,983](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:07:56,947](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:16:44,756](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:17:31,122](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:22:31,244](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:22:51,664](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:23:44,989](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:25:38,171](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:34:26,049](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:34:26,076](INFO)src.testcase.test_sceneAccount_api : check result successful!
+[2018-01-29 15:34:35,812](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:40:42,147](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:40:42,174](INFO)src.testcase.test_sceneAccount_api : check result successful!
+[2018-01-29 15:40:51,956](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:41:29,536](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-01-29 15:41:29,571](ERROR)src.testcase.test_sceneAccount_api : check result error:'NoneType' object has no attribute '__getitem__'
+[2018-01-29 15:41:42,869](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-02-28 15:12:03,262](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 15:12:03,407](ERROR)src.testcase.test_sceneAccount_api : check result error:'NoneType' object has no attribute '__getitem__'
+[2018-02-28 15:12:03,410](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 15:14:35,533](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 15:14:35,566](ERROR)src.testcase.test_sceneAccount_api : check result error:'NoneType' object has no attribute '__getitem__'
+[2018-02-28 15:14:35,569](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 15:15:47,914](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 15:15:47,956](ERROR)src.testcase.test_sceneAccount_api : check result error:'NoneType' object has no attribute '__getitem__'
+[2018-02-28 15:15:47,959](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 16:52:07,328](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 16:52:07,403](ERROR)src.testcase.test_sceneAccount_api : check result error:'sceneTitle'
+[2018-02-28 16:52:07,407](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 16:53:17,213](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 16:53:17,252](ERROR)src.testcase.test_sceneAccount_api : check result error:'NoneType' object has no attribute '__getitem__'
+[2018-02-28 16:53:17,255](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 16:54:01,431](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-02-28 16:54:01,476](ERROR)src.testcase.test_sceneAccount_api : check result error:'NoneType' object has no attribute '__getitem__'
+[2018-02-28 16:54:01,480](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): www.api.tianxialashou.com.cn
+[2018-03-05 14:56:32,190](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment
+[2018-03-05 14:59:19,127](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment
+[2018-03-05 15:00:22,934](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment
+[2018-03-05 15:11:01,686](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment
+[2018-03-05 15:15:39,249](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment
+[2018-03-05 15:17:35,543](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment
+[2018-03-05 15:18:27,961](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment
+[2018-03-05 15:20:46,940](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-05 15:22:00,207](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-05 15:22:00,260](ERROR)src.testcase.test_comments_api : error info:global name 'json' is not defined
+[2018-03-05 15:22:14,069](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-05 15:48:38,476](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-05 16:02:09,346](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-05 16:02:09,410](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-05 16:09:33,108](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-05 16:09:33,170](INFO)src.testcase.test_comments_api : check result successful!
+[2018-03-05 16:09:33,174](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 127.0.0.1
+[2018-03-06 14:30:42,267](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-03-06 14:30:42,390](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-03-06 14:31:39,378](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-03-06 14:31:39,431](INFO)src.testcase.test_comments_api : check result successful!
+[2018-03-06 14:31:39,434](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-03-06 14:34:02,148](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-03-06 14:34:02,263](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-03-06 14:34:24,582](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-03-06 14:34:24,645](INFO)src.testcase.test_comments_api : check result successful!
+[2018-03-06 14:34:24,648](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-04-23 14:23:01,617](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-04-23 14:23:02,687](ERROR)src.public.configHTTP : get request error:HTTPConnectionPool(host='10.1.36.221', port=808): Max retries exceeded with url: /gateway/delegate/scenes/switch/yxIndex?guid=6dc6bb55-7c93-41ba-b2bd-ea7162323b00 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x00000000036EB860>: Failed to establish a new connection: [Errno 10061] ',))
+[2018-04-23 14:46:41,184](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-04-23 14:46:41,319](INFO)test_comments_api : check result successful!
+[2018-04-23 14:46:41,322](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-04-23 14:47:24,625](INFO)requests.packages.urllib3.connectionpool : Starting new HTTP connection (1): 10.1.36.221
+[2018-04-23 14:47:24,733](INFO)test_comments_api : check result successful!

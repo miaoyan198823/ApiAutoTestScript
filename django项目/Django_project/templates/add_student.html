@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+    {% load staticfiles %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/static/my_css.css">
+    <title>添加学生</title>
+</head>
+<body>
+<div class="container" style="margin-top: 100px">
+    <div class="col-md-5 m-auto">
+        <h2><p class="text-center">新增学生</p></h2>
+        <form class="form-horizontal " method="post" action="" enctype="multipart/form-data" novalidate
+              autocomplete="off">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ as_form.name.id_for_label }}">{{ as_form.name.label }}</label>
+                {{ as_form.name }}
+                <span class="help-block">{{ as_form.name.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label for="{{ as_form.age.id_for_label }}">{{ as_form.age.label }}</label>
+                {{ as_form.age }}
+                <span class="help-block">{{ as_form.age.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label for="{{ as_form.email.id_for_label }}">{{ as_form.email.label }}</label>
+                {{ as_form.email }}
+                <span class="help-block">{{ as_form.email.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label for="{{ as_form.address.id_for_label }}">{{ as_form.address.label }}</label>
+                {{ as_form.address }}
+                <span class="help-block">{{ as_form.address.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label for="{{ as_form.cls_id.id_for_label }}">{{ as_form.cls_id.label }}</label>
+                {{ as_form.cls_id }}
+                <span class="help-block">{{ as_form.cls_id.errors.0 }}</span>
+            </div>
+
+            <button type="button" class="btn btn-success btn-lg btn-block" id="add_student_btn">提交</button>
+        </form>
+    </div>
+
+</div>
+<script src="/static/jquery-3.3.1/jquery-3.3.1.js"></script>
+<script src="/static/bootstrap3/js/bootstrap.min.js"></script>
+<script>
+    $("#add_student_btn").click(function () {
+        var name = $("#id_name").val();
+        var age = $("#id_age").val();
+        var email = $("#id_email").val();
+        var address = $("#id_address").val();
+        var cls_id = $("#id_cls_id option:selected").val();
+        var csrf_token = $("[name='csrfmiddlewaretoken']").val();
+
+        $.ajax({
+            url: "/add_student/",
+            type: "post",
+            data: {
+                "name": name,
+                "age": age,
+                "email": email,
+                "address": address,
+                "cls_id": cls_id,
+                "csrfmiddlewaretoken": csrf_token
+            },
+            success: function (data) {
+                if (data.msg_info) {
+                    window.location.href = "/student_list/";
+                } else {
+                    console.log(data.error_info);
+                    $.each(data.error_info, function (k, v) {
+                        $("#id_" + k).next().text(v[0]).css({
+                            "color": "red",
+                            "font-size": "12px"
+                        });
+                    })
+                }
+            }
+        })
+    });
+
+    $("form input").focus(function () {
+        $(this).next().text("");
+
+    })
+</script>
+
+</body>
+</html>

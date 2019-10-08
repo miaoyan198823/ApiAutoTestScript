@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/my_css.css">
+    <link rel="stylesheet" href="/static/theme/{{ blog.theme }}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{ blog.title }}</title>
+</head>
+<body>
+<div class="header">
+    <p>{{ blog.title }}</p>
+</div>
+
+<div class="container">
+    <div class="col-md-8">
+    {% block page-main %}
+     {% endblock %}
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">文章分类</div>
+            <div class="panel-body">
+                {% for category in category_list %}
+                    <p>{{ category.title }}({{ category.c }})</p>
+                {% endfor %}
+            </div>
+        </div>
+        </div>
+    <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">文章标签</div>
+                <div class="panel-body">
+                {% for tag in tag_list %}
+                    <p>{{ tag.title }}({{ tag.c }})</p>
+                 {% endfor %}
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">日期归档</div>
+                <div class="panel-body">
+                   {% for date in date_list %}
+                    <p>{{ date.d }}({{ date.c }})</p>
+                 {% endfor %}
+                </div>
+            </div>
+    </div>
+</body>
+</html>

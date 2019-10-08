@@ -1,0 +1,1 @@
+[2018-03-05 15:11:01,686](ERROR)src.testcase.test_comments_api : error info:local variable 'response' referenced before assignment

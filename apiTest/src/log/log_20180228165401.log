@@ -1,0 +1,1 @@
+[2018-02-28 16:54:01,476](ERROR)src.testcase.test_sceneAccount_api : check result error:'NoneType' object has no attribute '__getitem__'

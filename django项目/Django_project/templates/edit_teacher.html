@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>编辑老师</title>
+</head>
+<body>
+<div class="container" style="margin-top: 100px">
+    <h2><p class="text-center">编辑老师</p></h2>
+    <div class="col-md-5 m-auto">
+        <form class="form-horizontal " method="post" action="" enctype="multipart/form-data" novalidate
+              autocomplete="off">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ at_form.name.id_for_label }}">{{ at_form.name.label }}</label>
+                {{ at_form.name }}
+                <span class="help-block">{{ at_form.name.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label for="{{ at_form.age.id_for_label }}">{{ at_form.age.label }}</label>
+                {{ at_form.age }}
+                <span class="help-block">{{ at_form.age.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label for="{{ at_form.email.id_for_label }}">{{ at_form.email.label }}</label>
+                {{ at_form.email }}
+                <span class="help-block">{{ at_form.email.errors.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label for="{{ at_form.address.id_for_label }}">{{ at_form.address.label }}</label>
+                {{ at_form.address }}
+                <span class="help-block">{{ at_form.address.errors.0 }}</span>
+            </div>
+            <button type="button" class="btn btn-success btn-lg btn-block" id="edit_teacher_btn">提交</button>
+        </form>
+    </div>
+</div>
+<script src="/static/jquery-3.3.1/jquery-3.3.1.js"></script>
+<script src="/static/bootstrap3/js/bootstrap.min.js"></script>
+<script>
+    $("#edit_teacher_btn").click(function () {
+        var name = $("#id_name").val();
+        var age = $("#id_age").val();
+        var email = $("#id_email").val();
+        var address = $("#id_address").val();
+        var csrf_token = $("[name='csrfmiddlewaretoken']").val();
+        $.ajax({
+            url:"/edit_teacher/{{ nid }}/",
+            type:"post",
+            data:{
+                "name": name,
+                "age": age,
+                "email": email,
+                "address": address,
+                "csrfmiddlewaretoken": csrf_token
+            },
+            success:function (data) {
+                if(data.msg_info){
+                    window.location.href = "/teacher_list/";
+                }else {
+                    $.each(data.error_info,function (k,v) {
+                        $("#id_" + k).next().text(v[0]).css({
+                            "color": "red",
+                            "font-size": "12px"
+                        });
+                    })
+                }
+
+            }
+        })
+
+    });
+
+    $("form input").focus(function () {
+        $(this).next().text("");
+    })
+</script>
+</body>
+</html>

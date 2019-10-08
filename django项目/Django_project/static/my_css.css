@@ -1,0 +1,56 @@
+/*博客主页面样式表*/
+.usr_img{
+    width: 70px;
+    height: 60px;
+
+}
+
+.article-footer span{
+    margin-right: 15px;
+}
+
+.article-footer{
+    margin-top: 1px;
+}
+
+
+/*个人博客站点样式*/
+.header{
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+
+.header p {
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.title-size {
+    font-size: 20px;
+    padding: 8px 0;
+    color: #2b669a;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.article-detail-title {
+    font-size: 20px;
+    padding: 8px 0;
+    color: #2b669a;
+}
+
+.search_article_title{
+    font-size: 20px;
+    padding: 8px 0;
+    color: #2b669a;
+}
+
+.home_article_title{
+    font-size: 20px;
+    padding: 8px 0;
+    color: #2b669a;
+}
